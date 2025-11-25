@@ -141,22 +141,22 @@ namespace eTickets.Data
                     {
                         new Actor_Movie()
                         {
-                            ActorId = 1,
+                            Id = 1,
                             MovieId = 1
                         },
                         new Actor_Movie()
                         {
-                            ActorId = 1,
+                            Id = 1,
                             MovieId = 2
                         },
                         new Actor_Movie()
                         {
-                            ActorId = 2,
+                            Id = 2,
                             MovieId = 2
                         },
                         new Actor_Movie()
                         {
-                            ActorId = 3,
+                            Id = 3,
                             MovieId = 3
                         },
                     });

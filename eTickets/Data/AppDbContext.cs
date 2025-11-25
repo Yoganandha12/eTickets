@@ -15,14 +15,14 @@ namespace eTickets.Data
             modelBuilder.Entity<Actor_Movie>()
                 .HasKey(am => new
                 {
-                    am.ActorId,
+                    am.Id,
                     am.MovieId
                 });
 
             modelBuilder .Entity<Actor_Movie>()
                 .HasOne(m => m.Actor)
                 .WithMany(am => am.Actors_Movies)
-                .HasForeignKey(m => m.ActorId); 
+                .HasForeignKey(m => m.Id); 
 
             base.OnModelCreating(modelBuilder);
         }
